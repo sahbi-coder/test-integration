@@ -1,0 +1,13 @@
+@media only screen and (max-width: 550px) {
+  .enjoybottom {
+    height: auto !important;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .enjoybottom-img {
+    width: 100%;
+  }
+  .enjoybottom-text-block {
+    width: 100% !important;
+  }
+}

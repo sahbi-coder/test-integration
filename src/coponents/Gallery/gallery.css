@@ -1,0 +1,50 @@
+.gallery {
+  padding: 10%;
+}
+.gallery-title {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2.5%;
+  font-size: 2.5em;
+}
+.gallery-grid {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 70vh;
+}
+.gallery-grid-item {
+  background-color: #e58f00;
+  border: 2px #e58f00 solid;
+}
+
+.gallery-grid-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 571px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid-item {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-grid-item {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 50vh);
+  }
+}
